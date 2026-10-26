@@ -269,6 +269,7 @@ class EntityBis:
         self._hold_name = None
         self._hold_timer = 0.0
         self.drops = []
+        self.r = random.random()
 
     #
     # ORIENTATION
@@ -875,10 +876,26 @@ class Mob(LivingEntity):
     def _walk(self, direction, speed):
         if direction == 0:
             return
+
         self._face(direction)
         self.velocity.x = direction * speed
-        if self.on_ground and self._collides_at(direction * 2, 0):     # obstacle devant : il saute
-            self.jump(self.jump_force)
+
+        if self.on_ground and self._collides_at(direction * 2, 0):
+            # Vérifie si les deux blocs au-dessus de l'obstacle sont libres
+            T = game_property.TILE_SIZE
+
+            obstacle_x = self.rect.centerx + direction * (self.rect.width // 2 + 2)
+            block_x = int(obstacle_x // T)
+
+            # Coordonnées verticales des deux blocs au-dessus du sol
+            feet_y = self.pos.y
+            block_y = int(feet_y // T)
+
+            block_1 = self.world.get_block(block_x, block_y)
+            block_2 = self.world.get_block(block_x, block_y + 1)
+
+            if block_1.can_collide() and not block_2.can_collide():
+                self.jump(self.jump_force)
 
     def _is_valid_target(self, e):
         return e is not None and e is not self and e.is_alive and getattr(e, "health", 1) > 0
@@ -1043,6 +1060,84 @@ class HostileMob(AggressiveMob):
         self._scan_timer = self.scan_interval                     # on ne scanne pas à chaque frame
         if self.target is None or self._distance_to(self.target) > self.sight_range * 1.5:
             self.target = self._nearest_player(self.sight_range)
+
+
+#
+# MOB
+#
+
+class Fox(PassiveMob):
+    def __init__(self, world, pos=(0, 0), name="Fox entity", health=10, max_health=10):
+        super().__init__(world, pos, None, name, None, AnimationSet.FOX, health, max_health, None, True, False, None, run_speed=game_property.ENTITY_SPEED * 4)
+
+        BODY_SIZE = (game_property.TILE_SIZE * 2, game_property.TILE_SIZE // 4 * 3)
+
+        # Visuel
+        self.add_part(TexturePart(TextureType.FOX_BODY, offset=(0, game_property.TILE_SIZE // 2),  size=BODY_SIZE, name="body", z_index=99))
+
+        self.add_part(TexturePart(TextureType.FOX_LEG, offset=(10, 0), size=(game_property.TILE_SIZE // 3, game_property.TILE_SIZE // 2), name="leg_right", z_index=1, pivot=(0, -(game_property.TILE_SIZE // 4))))
+        self.add_part(TexturePart(TextureType.FOX_LEG, offset=(game_property.TILE_SIZE, 0), size=(game_property.TILE_SIZE // 3, game_property.TILE_SIZE // 2), name="leg_left", z_index=2, pivot=(0, -(game_property.TILE_SIZE // 4))))
+        self.add_part(TexturePart(TextureType.FOX_TAIL,  offset=(-20, (game_property.TILE_SIZE // 2) + BODY_SIZE[1] // 2 - 6), size=(20, 12), name="tail",  z_index=3, flip_x=True))
+
+        self.add_part(TexturePart(TextureType.FOX_EAR,  offset=(game_property.TILE_SIZE * 2 - 8 * 3, game_property.TILE_SIZE // 2 + BODY_SIZE[1]), size=(8, 8), name="ear",  z_index=10, attach_to="body"))
+
+        # Physique
+        self.add_part(CollisionPart((10, 0),  (game_property.TILE_SIZE * 1, game_property.TILE_SIZE // 2 + BODY_SIZE[1]), name="body_hitbox", tag="body"))
+        self.recenter_origin()
+
+        if self.r > 0.5:
+            self.add_drop(inventory.ItemStack(game_type.ItemProperty.FOX_MEAT, count=2))
+        else:
+            self.add_drop(inventory.ItemStack(game_type.ItemProperty.FOX_MEAT, count=3))
+    
+    def to_json(self, type_="Fox", dict_=None):
+        return super().to_json(type_, dict_)
+
+class Pig(PassiveMob):
+    def __init__(self, world, pos=(0, 0), name="Pig entity", health=10, max_health=10):
+        super().__init__(world, pos, None, name, None, AnimationSet.PIG, health, max_health, None, True, False, None, run_speed=game_property.ENTITY_SPEED * 3)
+
+        LEG_SIZE = (game_property.TILE_SIZE // 3, game_property.TILE_SIZE // 2)
+
+        BODY_SIZE = (game_property.TILE_SIZE * 1.3, game_property.TILE_SIZE // 6 * 5)
+        BODY_OFFSET = (0, LEG_SIZE[1])
+
+        HEAD_SIZE = (BODY_SIZE[1] - 4, BODY_SIZE[1] - 4)
+        HEAD_OFFSET = (BODY_SIZE[0], LEG_SIZE[1] + 2)
+
+        HITBOX = (game_property.TILE_SIZE * 1.5, game_property.TILE_SIZE * 1.5)
+        # Visuel
+        self.add_part(TexturePart(TextureType.PIG_BODY, size=BODY_SIZE, offset=BODY_OFFSET, z_index=4, name="body"))
+
+        self.add_part(TexturePart(TextureType.PIG_LEG, size=LEG_SIZE, offset=(4, 0), z_index=3, name="leg_right", pivot=(0, -(LEG_SIZE[1] // 2))))
+        self.add_part(TexturePart(TextureType.PIG_LEG, size=LEG_SIZE, offset=(BODY_SIZE[0] - LEG_SIZE[0] - 4, 0), z_index=2, name="leg_left", pivot=(0, -(LEG_SIZE[1] // 2))))
+
+        self.add_part(TexturePart(TextureType.PIG_HEAD, size=HEAD_SIZE, offset=HEAD_OFFSET, z_index=5, name="head"))
+
+        # Physique
+        self.add_part(CollisionPart(size=HITBOX, name="hitbox"))
+        self.recenter_origin()
+
+    def to_json(self, type_="Pig", dict_=None):
+        return super().to_json(type_, dict_)
+
+class Hedgehog(PassiveMob):
+    def __init__(self, world, pos=(0, 0), name="Pig entity", health=10, max_health=10):
+        super().__init__(world, pos, None, name, None, AnimationSet.PIG, health, max_health, None, True, False, None, run_speed=game_property.ENTITY_SPEED * 3)
+
+        HEIGHT = game_property.TILE_SIZE // 3 * 2
+        WIDTH = HEIGHT * 1.8
+
+        SIZE = (WIDTH, HEIGHT)
+        # Visuel
+        self.add_part(TexturePart(TextureType.HEDGEHOG, size=SIZE, name="body", z_index=1))
+
+        # Physique
+        self.add_part(CollisionPart(size=SIZE, name="hitbox"))
+        self.recenter_origin()
+
+    def to_json(self, type_="Hedgehog", dict_=None):
+        return super().to_json(type_, dict_)
 
 
 class PLAYER_TYPE:
@@ -1323,6 +1418,11 @@ class Player(LivingEntity):
         return self
 
 
+#
+# HOSTILE MOB
+#
+
+
 class WitherHead(EntityBis):
     def __init__(self, world, pos=(0, 0), name="Wither head", size_coef=1,
                  direction=(1, 0), owner=None, speed=None, damage=5, lifetime=6.0):
@@ -1538,31 +1638,6 @@ class Wither(LivingEntity):
     def to_json(self, type_="Wither", dict_=None):
         return super().to_json(type_, dict_)
 
-
-class Fox(PassiveMob):
-    def __init__(self, world, pos=(0, 0), name="Fox entity", health=10, max_health=10):
-        super().__init__(world, pos, None, name, None, AnimationSet.FOX, health, max_health, None, True, False, None, run_speed=game_property.ENTITY_SPEED * 4)
-
-        BODY_SIZE = (game_property.TILE_SIZE * 2, game_property.TILE_SIZE // 4 * 3)
-
-        # Visuel
-        self.add_part(TexturePart(TextureType.FOX_BODY, offset=(0, game_property.TILE_SIZE // 2),  size=BODY_SIZE, name="body", z_index=99))
-
-        self.add_part(TexturePart(TextureType.FOX_LEG, offset=(10, 0), size=(game_property.TILE_SIZE // 3, game_property.TILE_SIZE // 2), name="leg_right", z_index=1))
-        self.add_part(TexturePart(TextureType.FOX_LEG, offset=(game_property.TILE_SIZE, 0), size=(game_property.TILE_SIZE // 3, game_property.TILE_SIZE // 2), name="leg_left", z_index=2))
-        self.add_part(TexturePart(TextureType.FOX_TAIL,  offset=(-20, (game_property.TILE_SIZE // 2) + BODY_SIZE[1] // 2 - 6), size=(20, 12), name="tail",  z_index=3, flip_x=True))
-
-        self.add_part(TexturePart(TextureType.FOX_EAR,  offset=(game_property.TILE_SIZE * 2 - 8 * 3, game_property.TILE_SIZE // 2 + BODY_SIZE[1]), size=(8, 8), name="ear",  z_index=10))
-
-        # Physique
-        self.add_part(CollisionPart((10, 0),  (game_property.TILE_SIZE * 1, game_property.TILE_SIZE // 2 + BODY_SIZE[1]), name="body_hitbox", tag="body"))
-        self.recenter_origin()
-
-        self.add_drop(inventory.ItemStack(game_type.ItemProperty.FOX_MEAT, count=2))
-    
-    def to_json(self, type_="Fox", dict_=None):
-        return super().to_json(type_, dict_)
-
 class Skeleton(HostileMob):
     DETECTION_DISTANCE = game_property.TILE_SIZE * 15
     MIN_DISTANCE = game_property.TILE_SIZE * 0.5      # il recule si le joueur est plus près
@@ -1746,6 +1821,10 @@ class Zombie(HostileMob):
         return super().to_json(type_, dict_)
 
 
+#
+# OTHER ENTITYS
+#
+
 
 class Arrow(EntityBis):
     TEXTURE_ANGLE = 45
@@ -1869,6 +1948,9 @@ class Arrow(EntityBis):
             self.attach_self(entity)
             self.world.apply_damage_to_entity(entity, self.damage * 2, knock, self.sender)
 
+    def to_json(self, type_="Arrow", dict_=None):
+        return super().to_json(type_, dict_)
+
 class Item(EntityBis):
     def __init__(self, world=None, _item=None, pos=(0, 0), size=(game_property.SIZE_ITEM, game_property.SIZE_ITEM), timer_picked=1):
         super().__init__(world, pos, parts=None, name="Item", lifetime=240)
@@ -1946,6 +2028,9 @@ ENTITY_CLASSES = {
     "Item": Item,
     "Zombie": Zombie,
     "Skeleton": Skeleton,
+    "Arrow": Arrow,
+    "Pig": Pig,
+    "Hedgehog": Hedgehog,
 }
 
 def get_classe_by_str(text):

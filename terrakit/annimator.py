@@ -13,6 +13,7 @@ class AnimationSet(Enum):
     FOX = "fox.json"
     ZOMBIE = "zombie.json"
     SKELETON = "skeleton.json"
+    PIG = "pig.json"
     
 
 class Anim(str, Enum):

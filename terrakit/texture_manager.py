@@ -131,6 +131,14 @@ class TextureType:
     WITHER_TOP_BODY = "wither_top_body"
     WITHER_BODY_PART = "wither_body_part"
     WITHER_BODY_CORPS = "wither_body_corps"
+
+    PIG_BODY = "pig_body"
+    PIG_HEAD = "pig_head"
+    PIG_LEG = "pig_leg"
+    PIG_MEAT = "pig_meat"
+    PIG_COOKED_MEAT = "pig_cooked_meat"
+
+    HEDGEHOG = "hedgehog"
     
     CHIPS = "chips"
     EGG = "egg"
@@ -286,6 +294,16 @@ class TextureManager:
             self.load_texture(TextureType.WITHER_TOP_BODY, ENTITIES_PATH + MOBS_PATH + "wither/top_body.png")
             self.load_texture(TextureType.WITHER_BODY_CORPS, ENTITIES_PATH + MOBS_PATH + "wither/body_corps.png")
             self.load_texture(TextureType.WITHER_BODY_PART, ENTITIES_PATH + MOBS_PATH + "wither/body_part.png")
+
+            # PIG
+            self.load_texture(TextureType.PIG_BODY, ENTITIES_PATH + MOBS_PATH + "pig/pig_body.png")
+            self.load_texture(TextureType.PIG_HEAD, ENTITIES_PATH + MOBS_PATH + "pig/pig_head.png")
+            self.load_texture(TextureType.PIG_LEG, ENTITIES_PATH + MOBS_PATH + "pig/pig_leg.png")
+            self.load_texture(TextureType.PIG_MEAT, ITEMS_PATH + CONSUMABLE_PATH + "pig_meat.png")
+            self.load_texture(TextureType.PIG_COOKED_MEAT, ITEMS_PATH + CONSUMABLE_PATH + "pig_cooked_meat.png")
+
+            # HEDGEHOG
+            self.load_texture(TextureType.HEDGEHOG, ENTITIES_PATH + MOBS_PATH + "hedgehog/hedgehog_body.png")
 
             #
             self.load_texture(TextureType.DEFAULT, "default.png")

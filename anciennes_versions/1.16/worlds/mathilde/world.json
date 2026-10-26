@@ -4,9 +4,9 @@
         {
             "type": "Player",
             "uuid": "35c0d2a7-fb3f-492a-9733-1e365faba48e",
-            "x": 2958.0,
+            "x": 3367.119999999998,
             "y": 768.0,
-            "vx": 0.0,
+            "vx": -3.615880884691672e-14,
             "vy": 0.0,
             "speed": 41.6,
             "display_name": null,
@@ -19,7 +19,53 @@
                 "uuid": "f8786383-7f67-406d-98f7-dc98490b7c20",
                 "size": 24,
                 "title": "Inventory of math",
-                "items": [],
+                "items": [
+                    {
+                        "slot": 0,
+                        "itemStack": {
+                            "item_type_name": "diamond_sword",
+                            "count": 1,
+                            "durability": 1561,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 1,
+                        "itemStack": {
+                            "item_type_name": "fox_meat",
+                            "count": 4,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 2,
+                        "itemStack": {
+                            "item_type_name": "stone",
+                            "count": 3,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 3,
+                        "itemStack": {
+                            "item_type_name": "mushroom",
+                            "count": 1,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 4,
+                        "itemStack": {
+                            "item_type_name": "oak_trunk",
+                            "count": 3,
+                            "durability": null,
+                            "components": []
+                        }
+                    }
+                ],
                 "owner_uuid": "35c0d2a7-fb3f-492a-9733-1e365faba48e"
             }
         }
@@ -540,6 +586,84 @@
                 "x": 64,
                 "y": 23,
                 "block": "dirt",
+                "components": []
+            }
+        },
+        "6": {
+            "105:26": {
+                "x": 105,
+                "y": 26,
+                "block": "air",
+                "components": []
+            },
+            "105:25": {
+                "x": 105,
+                "y": 25,
+                "block": "air",
+                "components": []
+            },
+            "105:28": {
+                "x": 105,
+                "y": 28,
+                "block": "air",
+                "components": []
+            },
+            "104:27": {
+                "x": 104,
+                "y": 27,
+                "block": "air",
+                "components": []
+            },
+            "105:27": {
+                "x": 105,
+                "y": 27,
+                "block": "air",
+                "components": []
+            },
+            "106:27": {
+                "x": 106,
+                "y": 27,
+                "block": "air",
+                "components": []
+            },
+            "105:24": {
+                "x": 105,
+                "y": 24,
+                "block": "air",
+                "components": []
+            }
+        },
+        "7": {
+            "125:23": {
+                "x": 125,
+                "y": 23,
+                "block": "air",
+                "components": []
+            },
+            "124:23": {
+                "x": 124,
+                "y": 23,
+                "block": "air",
+                "components": []
+            },
+            "121:23": {
+                "x": 121,
+                "y": 23,
+                "block": "air",
+                "components": []
+            }
+        },
+        "8": {
+            "131:23": {
+                "x": 131,
+                "y": 23,
+                "block": "air",
+                "components": []
+            },
+            "135:23": {
+                "x": 135,
+                "y": 23,
+                "block": "air",
                 "components": []
             }
         }

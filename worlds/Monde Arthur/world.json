@@ -2,32 +2,2605 @@
     "seed": 203577,
     "entitys": [
         {
-            "type": "Player",
-            "uuid": "5ac97add-abc9-4320-a3de-100f38b8bbf3",
-            "x": -1033,
-            "y": 577,
-            "w": 27,
-            "h": 80,
-            "vx": -198.97050023368826,
-            "vy": 13.866666666666362,
-            "gravity": 80,
+            "type": "Fox",
+            "uuid": "e7a0e9ae-a3c3-4110-abd8-b7e71cb5ddcb",
+            "x": 25846.33599999989,
+            "y": 1632.3555555555556,
+            "vx": 6.103282213668154e-10,
+            "vy": 0.0,
             "speed": 41.6,
-            "display_name": false,
-            "displayed_name": "Arthur",
-            "name": "Arthur",
-            "live_time": null,
-            "health": 40,
-            "max_health": 40,
-            "orientation": "left",
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "095aed9d-1aa2-441b-8b81-01013640a431",
+            "x": 25679.743999999948,
+            "y": 1503.4311111111112,
+            "vx": -34.56,
+            "vy": -55.46666666666667,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "45eee326-23ca-4789-81e6-afd2db46913a",
+            "x": 25209.91999999981,
+            "y": 1088.0,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "b038036c-66d7-4bfb-ad48-8ec79291239f",
+            "x": 26805.952000000165,
+            "y": 1536.0,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Zombie",
+            "uuid": "64129d0d-bfbc-42b1-adbb-0bd8b42d35be",
+            "x": 26606.0,
+            "y": 767.9999999999999,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "335b6594-41f6-432c-b283-8fe1be2c9401",
+            "x": 26634.800000000047,
+            "y": 767.9999999999999,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "a5f00f89-eae9-4b24-a47b-157bd7c2b821",
+            "x": 26926.320000000334,
+            "y": 64.35555555555555,
+            "vx": -2.401103215459801e-09,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "19503209-dc39-4652-ac8e-2fbed4ae7c00",
+            "x": 26906.735999999957,
+            "y": 64.35555555555555,
+            "vx": -4.721218431432277e-13,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "e2ba6644-c388-4864-b7f4-113a99c38371",
+            "x": 28101.37598139947,
+            "y": 768.0,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "87681dc6-076f-4f60-9763-a1badc1ba96b",
+            "x": 27465.12193292086,
+            "y": 992.3555555555555,
+            "vx": -7.906219472434524,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "6dacd903-f535-464a-abf6-9116a315975d",
+            "x": 29112.576917382823,
+            "y": 1696.0,
+            "vx": -0.006115887777991607,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "fce015c0-b061-44ca-85fe-84f0a5a4cd74",
+            "x": 29232.0,
+            "y": 1792.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "703b48c1-8dcd-45ee-8994-fad42e5dfc97",
+            "x": 754.0,
+            "y": 1472.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "6363efa4-a96e-4e0c-bb0d-102147516913",
+            "x": 754.0,
+            "y": 1472.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "dbf57e2c-d93a-4b41-9730-4f1c0abdd66c",
+            "x": 598.7040016485452,
+            "y": 160.0,
+            "vx": -1.099031333017172e-05,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "a76f4e18-f74b-4387-854f-14b24372dfb0",
+            "x": -5865.984000000006,
+            "y": 704.0,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Zombie",
+            "uuid": "74d9d39b-54b5-4e38-ba53-17475eb0faa0",
+            "x": -5646.0,
+            "y": 192.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "9fdbeec9-8afb-4571-a99a-54f3a7d7156f",
+            "x": -5646.0,
+            "y": 192.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "6b4fae8c-18ec-4f5a-baf8-d13fba129f0b",
+            "x": -5682.0,
+            "y": 192.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "5e63d01c-151a-4680-b2e7-fbc1280d0f71",
+            "x": -5346.447999999999,
+            "y": 64.35555555555217,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "84c83784-aa65-4c43-9c85-c37163a93748",
+            "x": -4624.0,
+            "y": 608.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Zombie",
+            "uuid": "e4de2208-bcad-4c64-ba92-86f0e2130e25",
+            "x": -4222.128000000001,
+            "y": -736.0,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "e00a200c-5e1c-4f68-aa2c-c08ac81c534c",
+            "x": -4206.0,
+            "y": -736.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "0563fe20-a348-4693-9708-c99ff35422dc",
+            "x": -4206.0,
+            "y": -736.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "48daefbc-7574-437d-90d3-f622f176b5b6",
+            "x": -3651.8238111189444,
+            "y": -96.0,
+            "vx": -0.0012592070583745199,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "becc90a4-a846-45bd-8a78-df7666504133",
+            "x": -3048.880000000008,
+            "y": -192.0,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 19.0,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "ca94bf21-739a-4f90-975c-499c24ac76cc",
+            "x": -2482.0,
+            "y": 256.35555555555555,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 1.7763568394002505e-15,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "dc9de4a4-d45b-443f-baec-07169378be31",
+            "x": -2512.3200003468382,
+            "y": 672.0,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "8cc7cec9-30cf-423c-bbed-ca5afdeb443b",
+            "x": -2529.2160314956427,
+            "y": 672.0,
+            "vx": 0.0002100002491001452,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Zombie",
+            "uuid": "b289f665-e647-4ba8-8a0b-1e4e9c2aba69",
+            "x": -2397.583999999998,
+            "y": 223.99999999999997,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "df6b1bf1-1544-4fe3-a256-02b4464e7d8b",
+            "x": -2482.0,
+            "y": 256.35555555555555,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "74172192-cfbc-408f-ad70-86da9aeffd5a",
+            "x": -2482.0,
+            "y": 256.35555555555555,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "527b5cbb-3fcb-462f-923a-74ab6da1cb26",
+            "x": -2376.591999999996,
+            "y": 224.0,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "53726424-4140-4130-b493-dc5059fdeba5",
+            "x": -1616.0,
+            "y": -576.0000000000001,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 9.0,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "b99c4778-eac3-4d09-92e4-f7f88f6f7901",
+            "x": -1607.8080000000043,
+            "y": -128.0,
+            "vx": -8.730481354612047e-21,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "bdb77b95-a8d8-4ec3-8b69-43ab20877df1",
+            "x": -330.2401529936577,
+            "y": 672.3555555555555,
+            "vx": 0.0010199577172833611,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "de023322-be5b-48fb-a0e4-0a05b40f9a10",
+            "x": -371.53650885745174,
+            "y": 640.0,
+            "vx": -16.529940864000004,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Zombie",
+            "uuid": "6151f2d3-14ae-49d2-b36e-8bcf290e5deb",
+            "x": 583.0559999999996,
+            "y": 544.3555555555555,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "77425360-3e6c-43a6-b31b-6f8389366267",
+            "x": 766.5280007096295,
+            "y": 1952.0,
+            "vx": -2.787832271576446e-13,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "144c1816-70e6-4a1a-aeda-f394fca366fe",
+            "x": 1126.2079999999996,
+            "y": 2048.3555555555554,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Zombie",
+            "uuid": "666234e0-285c-4941-a589-611251ce40e4",
+            "x": 1362.0,
+            "y": 1088.3555555555556,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "4c9956a0-d20e-4f0a-bb54-a72f7c3d16b1",
+            "x": 1352.7200000000018,
+            "y": 1088.3555555555556,
+            "vx": 8.828986849190433e-34,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "277751cc-78f1-4c27-acd9-3928592073b2",
+            "x": 1793.7279999729324,
+            "y": 1248.0,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Zombie",
+            "uuid": "4ab65e38-7108-4aa4-83d5-a3a7a3695159",
+            "x": 2318.0,
+            "y": 544.3555555555555,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "21b86bac-4bfc-4f58-a4c0-6b2a7921b682",
+            "x": 4700.287999998728,
+            "y": 576.0,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "dac13efb-6607-4884-8973-276188b57744",
+            "x": 8300.73599999911,
+            "y": 640.3555555555555,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Zombie",
+            "uuid": "ae9b2a78-d409-4a1c-91ae-3d120b77a412",
+            "x": 10162.512000000344,
+            "y": -608.9244444444445,
+            "vx": -34.56,
+            "vy": -55.46666666666667,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 6.333333333333334,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "ccd0d173-bc12-4166-955f-0d4dd37f9514",
+            "x": 10576.583545718571,
+            "y": 576.0,
+            "vx": -0.05030478753168467,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "5009cc58-aa8e-47c5-a1bb-3ad1e0b4999c",
+            "x": 11183.040000000334,
+            "y": 576.0,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "a878b9c8-79ab-4d82-b799-7922ae639a8b",
+            "x": 11861.744696586986,
+            "y": 384.35555555555555,
+            "vx": 1.808689419742559,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "998f9a59-e6cd-4ec5-8159-82ac2bbe8e6a",
+            "x": 12240.0,
+            "y": 544.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "07a54e63-f6a3-422c-beae-508e504451f8",
+            "x": 12296.319999999716,
+            "y": 544.0,
+            "vx": 1.940884949961722e-16,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "2ab698c4-1e36-4542-ac3c-6850719e7e04",
+            "x": 14721.024319871756,
+            "y": 352.0,
+            "vx": -0.002132478210256769,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "a5fded4a-e6e5-481d-9a2c-6e10622b213c",
+            "x": 14774.643221460557,
+            "y": 352.0,
+            "vx": 0.0851915994033509,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "aac96b0c-9cff-470a-81ee-1dcbcd366c0f",
+            "x": 17120.19199999975,
+            "y": 896.0,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Zombie",
+            "uuid": "8000c591-8876-4084-8ac6-78e62d7f456b",
+            "x": 17391.92000000016,
+            "y": 338.1333333333334,
+            "vx": 34.56,
+            "vy": -277.33333333333337,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "be5cc7df-a552-4c16-b15c-516dbae19f2d",
+            "x": 17311.599999999977,
+            "y": 384.35555555555555,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "33d1a7c1-2377-45c0-896a-269d4664fcd1",
+            "x": 17530.432000019686,
+            "y": 832.0,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Zombie",
+            "uuid": "79f686d1-1bf8-4a5e-a5bd-195828efae3f",
+            "x": 17503.792000000092,
+            "y": 192.0,
+            "vx": 9.870894901121617e-13,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Zombie",
+            "uuid": "06b27736-59c5-4fd5-9d3c-0865ba2f28a2",
+            "x": 17522.0,
+            "y": 192.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Mob",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "7c89c554-0e31-408f-80e2-f1ffad8f1768",
+            "x": 18382.719737802432,
+            "y": 672.0,
+            "vx": 2.0680213476513327e-05,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "030de354-5614-45be-a36f-60092245bc27",
+            "x": 18248.2559999993,
+            "y": 704.0,
+            "vx": 34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "824e5143-b0ea-4ac5-83e9-5bc81d98701b",
+            "x": 19382.095999999863,
+            "y": 32.0,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "9fc45765-bf8a-4289-8ea0-22a6d554195a",
+            "x": 19436.431965000098,
+            "y": 32.35555555555555,
+            "vx": 0.00023333361011127244,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
+            "drops": []
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "04dcfe26-a1e4-49ed-b26c-04d5394d6e78",
+            "x": 19456.39999999312,
+            "y": 64.0,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Skeleton",
+            "uuid": "6b129752-111b-47df-8f54-dd2e0e23fff6",
+            "x": 19478.86400000006,
+            "y": 64.35555555555555,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Skeleton",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": true,
+            "drops": []
+        },
+        {
+            "type": "Fox",
+            "uuid": "191732d9-e8b6-4c48-ab6e-eb6d44b8bed2",
+            "x": 19888.0,
+            "y": 480.35555555555555,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "eecf9f04-72dd-4c15-978b-dc65a5379226",
+            "x": 19890.04799999995,
+            "y": 480.35555555555555,
+            "vx": -34.56,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": true,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "0166a0c6-52ed-4e9d-9862-afe708ce4a3c",
+            "x": 19984.0,
+            "y": 448.0,
+            "vx": 0.0,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Fox",
+            "uuid": "bd119005-be32-4db4-9581-8fde57a6ffbd",
+            "x": 20649.727999999846,
+            "y": 320.0,
+            "vx": 7.442213049230139e-52,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "Fox entity",
+            "health": 10,
+            "max_health": 10,
+            "flip_x": false,
+            "drops": [
+                {
+                    "item_type_name": "fox_meat",
+                    "count": 2,
+                    "durability": null,
+                    "components": []
+                }
+            ]
+        },
+        {
+            "type": "Player",
+            "uuid": "2f3efdf8-048e-4dff-a7e5-5d0d8b8a7efd",
+            "x": 29979.92,
+            "y": 1440.0,
+            "vx": 3.511370352851428e-59,
+            "vy": 0.0,
+            "speed": 41.6,
+            "display_name": null,
+            "name": "math",
+            "health": 20,
+            "max_health": 20,
+            "flip_x": false,
             "drops": [],
             "inventory": {
-                "uuid": "2bd77fb5-0535-4804-a580-bfbff28a6214",
+                "uuid": "0c3b0722-21e9-4baf-a1de-88020a414abb",
                 "size": 24,
-                "title": "Inventory of Arthur",
-                "items": [],
-                "owner_uuid": "5ac97add-abc9-4320-a3de-100f38b8bbf3"
+                "title": "Inventory of math",
+                "items": [
+                    {
+                        "slot": 0,
+                        "itemStack": {
+                            "item_type_name": "golden_sword",
+                            "count": 1,
+                            "durability": 432,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 1,
+                        "itemStack": {
+                            "item_type_name": "golden_pickaxe",
+                            "count": 1,
+                            "durability": 432,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 2,
+                        "itemStack": {
+                            "item_type_name": "wooden_axe",
+                            "count": 1,
+                            "durability": 110,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 3,
+                        "itemStack": {
+                            "item_type_name": "fox_meat",
+                            "count": 6,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 4,
+                        "itemStack": {
+                            "item_type_name": "stone",
+                            "count": 16,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 5,
+                        "itemStack": {
+                            "item_type_name": "torch",
+                            "count": 16,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 6,
+                        "itemStack": {
+                            "item_type_name": "chest",
+                            "count": 4,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 7,
+                        "itemStack": {
+                            "item_type_name": "dirt",
+                            "count": 2,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 8,
+                        "itemStack": {
+                            "item_type_name": "coal_ingot",
+                            "count": 9,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 9,
+                        "itemStack": {
+                            "item_type_name": "stick",
+                            "count": 1,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 10,
+                        "itemStack": {
+                            "item_type_name": "furnace",
+                            "count": 1,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 11,
+                        "itemStack": {
+                            "item_type_name": "oak_plank",
+                            "count": 40,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 12,
+                        "itemStack": {
+                            "item_type_name": "crafting_table",
+                            "count": 1,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 13,
+                        "itemStack": {
+                            "item_type_name": "gold_ore",
+                            "count": 5,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 14,
+                        "itemStack": {
+                            "item_type_name": "gold_ingot",
+                            "count": 10,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 15,
+                        "itemStack": {
+                            "item_type_name": "oak_trunk",
+                            "count": 9,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 16,
+                        "itemStack": {
+                            "item_type_name": "fox_meat",
+                            "count": 4,
+                            "durability": null,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 18,
+                        "itemStack": {
+                            "item_type_name": "wooden_pickaxe",
+                            "count": 1,
+                            "durability": 110,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 19,
+                        "itemStack": {
+                            "item_type_name": "wooden_sword",
+                            "count": 1,
+                            "durability": 110,
+                            "components": []
+                        }
+                    },
+                    {
+                        "slot": 20,
+                        "itemStack": {
+                            "item_type_name": "stone_pickaxe",
+                            "count": 1,
+                            "durability": 240,
+                            "components": []
+                        }
+                    }
+                ],
+                "owner_uuid": "2f3efdf8-048e-4dff-a7e5-5d0d8b8a7efd"
             }
         }
     ],
-    "modified_blocks": {}
+    "modified_blocks": {
+        "-17": {
+            "-270:-5": {
+                "x": -270,
+                "y": -5,
+                "block": "water",
+                "components": []
+            },
+            "-267:-6": {
+                "x": -267,
+                "y": -6,
+                "block": "water",
+                "components": []
+            },
+            "-265:-6": {
+                "x": -265,
+                "y": -6,
+                "block": "water",
+                "components": []
+            },
+            "-268:-5": {
+                "x": -268,
+                "y": -5,
+                "block": "water",
+                "components": []
+            },
+            "-266:-8": {
+                "x": -266,
+                "y": -8,
+                "block": "water",
+                "components": []
+            },
+            "-269:-7": {
+                "x": -269,
+                "y": -7,
+                "block": "water",
+                "components": []
+            },
+            "-266:-5": {
+                "x": -266,
+                "y": -5,
+                "block": "water",
+                "components": []
+            },
+            "-269:-4": {
+                "x": -269,
+                "y": -4,
+                "block": "water",
+                "components": []
+            },
+            "-264:-8": {
+                "x": -264,
+                "y": -8,
+                "block": "water",
+                "components": []
+            },
+            "-264:-5": {
+                "x": -264,
+                "y": -5,
+                "block": "water",
+                "components": []
+            },
+            "-263:-6": {
+                "x": -263,
+                "y": -6,
+                "block": "water",
+                "components": []
+            },
+            "-271:-4": {
+                "x": -271,
+                "y": -4,
+                "block": "water",
+                "components": []
+            },
+            "-270:-3": {
+                "x": -270,
+                "y": -3,
+                "block": "water",
+                "components": []
+            },
+            "-270:-6": {
+                "x": -270,
+                "y": -6,
+                "block": "water",
+                "components": []
+            },
+            "-267:-7": {
+                "x": -267,
+                "y": -7,
+                "block": "water",
+                "components": []
+            },
+            "-267:-4": {
+                "x": -267,
+                "y": -4,
+                "block": "water",
+                "components": []
+            },
+            "-265:-7": {
+                "x": -265,
+                "y": -7,
+                "block": "water",
+                "components": []
+            },
+            "-269:-5": {
+                "x": -269,
+                "y": -5,
+                "block": "water",
+                "components": []
+            },
+            "-268:-6": {
+                "x": -268,
+                "y": -6,
+                "block": "water",
+                "components": []
+            },
+            "-264:-6": {
+                "x": -264,
+                "y": -6,
+                "block": "water",
+                "components": []
+            },
+            "-266:-6": {
+                "x": -266,
+                "y": -6,
+                "block": "water",
+                "components": []
+            },
+            "-263:-7": {
+                "x": -263,
+                "y": -7,
+                "block": "water",
+                "components": []
+            },
+            "-271:-5": {
+                "x": -271,
+                "y": -5,
+                "block": "water",
+                "components": []
+            },
+            "-267:-8": {
+                "x": -267,
+                "y": -8,
+                "block": "water",
+                "components": []
+            },
+            "-270:-4": {
+                "x": -270,
+                "y": -4,
+                "block": "water",
+                "components": []
+            },
+            "-267:-5": {
+                "x": -267,
+                "y": -5,
+                "block": "water",
+                "components": []
+            },
+            "-265:-8": {
+                "x": -265,
+                "y": -8,
+                "block": "water",
+                "components": []
+            },
+            "-265:-5": {
+                "x": -265,
+                "y": -5,
+                "block": "water",
+                "components": []
+            },
+            "-269:-6": {
+                "x": -269,
+                "y": -6,
+                "block": "water",
+                "components": []
+            },
+            "-268:-7": {
+                "x": -268,
+                "y": -7,
+                "block": "water",
+                "components": []
+            },
+            "-269:-3": {
+                "x": -269,
+                "y": -3,
+                "block": "water",
+                "components": []
+            },
+            "-268:-4": {
+                "x": -268,
+                "y": -4,
+                "block": "water",
+                "components": []
+            },
+            "-266:-7": {
+                "x": -266,
+                "y": -7,
+                "block": "water",
+                "components": []
+            },
+            "-266:-4": {
+                "x": -266,
+                "y": -4,
+                "block": "water",
+                "components": []
+            },
+            "-264:-7": {
+                "x": -264,
+                "y": -7,
+                "block": "water",
+                "components": []
+            }
+        },
+        "-15": {
+            "-227:-6": {
+                "x": -227,
+                "y": -6,
+                "block": "water",
+                "components": []
+            },
+            "-228:-6": {
+                "x": -228,
+                "y": -6,
+                "block": "water",
+                "components": []
+            }
+        },
+        "-11": {
+            "-168:-15": {
+                "x": -168,
+                "y": -15,
+                "block": "air",
+                "components": []
+            },
+            "-163:-19": {
+                "x": -163,
+                "y": -19,
+                "block": "air",
+                "components": []
+            },
+            "-165:29": {
+                "x": -165,
+                "y": 29,
+                "block": "air",
+                "components": []
+            },
+            "-169:-17": {
+                "x": -169,
+                "y": -17,
+                "block": "air",
+                "components": []
+            },
+            "-167:-17": {
+                "x": -167,
+                "y": -17,
+                "block": "air",
+                "components": []
+            },
+            "-168:-16": {
+                "x": -168,
+                "y": -16,
+                "block": "air",
+                "components": []
+            },
+            "-163:-20": {
+                "x": -163,
+                "y": -20,
+                "block": "air",
+                "components": []
+            },
+            "-165:31": {
+                "x": -165,
+                "y": 31,
+                "block": "air",
+                "components": []
+            },
+            "-169:-15": {
+                "x": -169,
+                "y": -15,
+                "block": "air",
+                "components": []
+            },
+            "-167:-15": {
+                "x": -167,
+                "y": -15,
+                "block": "air",
+                "components": []
+            },
+            "-162:-19": {
+                "x": -162,
+                "y": -19,
+                "block": "air",
+                "components": []
+            },
+            "-166:29": {
+                "x": -166,
+                "y": 29,
+                "block": "air",
+                "components": []
+            },
+            "-168:-17": {
+                "x": -168,
+                "y": -17,
+                "block": "air",
+                "components": []
+            },
+            "-163:-21": {
+                "x": -163,
+                "y": -21,
+                "block": "air",
+                "components": []
+            },
+            "-165:30": {
+                "x": -165,
+                "y": 30,
+                "block": "air",
+                "components": []
+            },
+            "-167:-16": {
+                "x": -167,
+                "y": -16,
+                "block": "air",
+                "components": []
+            },
+            "-169:-16": {
+                "x": -169,
+                "y": -16,
+                "block": "air",
+                "components": []
+            },
+            "-162:-20": {
+                "x": -162,
+                "y": -20,
+                "block": "air",
+                "components": []
+            },
+            "-162:-17": {
+                "x": -162,
+                "y": -17,
+                "block": "torch",
+                "components": []
+            }
+        },
+        "-10": {
+            "-158:-14": {
+                "x": -158,
+                "y": -14,
+                "block": "air",
+                "components": []
+            },
+            "-159:-12": {
+                "x": -159,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-157:-12": {
+                "x": -157,
+                "y": -12,
+                "block": "torch",
+                "components": []
+            },
+            "-145:20": {
+                "x": -145,
+                "y": 20,
+                "block": "air",
+                "components": []
+            },
+            "-154:-13": {
+                "x": -154,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-152:-13": {
+                "x": -152,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-156:29": {
+                "x": -156,
+                "y": 29,
+                "block": "air",
+                "components": []
+            },
+            "-153:-12": {
+                "x": -153,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-155:31": {
+                "x": -155,
+                "y": 31,
+                "block": "air",
+                "components": []
+            },
+            "-148:-13": {
+                "x": -148,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-148:-7": {
+                "x": -148,
+                "y": -7,
+                "block": "air",
+                "components": []
+            },
+            "-148:-10": {
+                "x": -148,
+                "y": -10,
+                "block": "stone",
+                "components": []
+            },
+            "-155:-12": {
+                "x": -155,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-156:-14": {
+                "x": -156,
+                "y": -14,
+                "block": "air",
+                "components": []
+            },
+            "-147:-2": {
+                "x": -147,
+                "y": -2,
+                "block": "torch",
+                "components": []
+            },
+            "-150:-13": {
+                "x": -150,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-147:10": {
+                "x": -147,
+                "y": 10,
+                "block": "torch",
+                "components": []
+            },
+            "-148:2": {
+                "x": -148,
+                "y": 2,
+                "block": "stone",
+                "components": []
+            },
+            "-160:-18": {
+                "x": -160,
+                "y": -18,
+                "block": "air",
+                "components": []
+            },
+            "-150:-10": {
+                "x": -150,
+                "y": -10,
+                "block": "air",
+                "components": []
+            },
+            "-151:-12": {
+                "x": -151,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-159:-13": {
+                "x": -159,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-149:-12": {
+                "x": -149,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-157:-13": {
+                "x": -157,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-145:22": {
+                "x": -145,
+                "y": 22,
+                "block": "air",
+                "components": []
+            },
+            "-158:-12": {
+                "x": -158,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-145:19": {
+                "x": -145,
+                "y": 19,
+                "block": "air",
+                "components": []
+            },
+            "-154:-14": {
+                "x": -154,
+                "y": -14,
+                "block": "air",
+                "components": []
+            },
+            "-153:-13": {
+                "x": -153,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-155:30": {
+                "x": -155,
+                "y": 30,
+                "block": "air",
+                "components": []
+            },
+            "-152:-14": {
+                "x": -152,
+                "y": -14,
+                "block": "air",
+                "components": []
+            },
+            "-148:-11": {
+                "x": -148,
+                "y": -11,
+                "block": "air",
+                "components": []
+            },
+            "-155:-13": {
+                "x": -155,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-148:-8": {
+                "x": -148,
+                "y": -8,
+                "block": "air",
+                "components": []
+            },
+            "-148:-1": {
+                "x": -148,
+                "y": -1,
+                "block": "air",
+                "components": []
+            },
+            "-148:-2": {
+                "x": -148,
+                "y": -2,
+                "block": "stone",
+                "components": []
+            },
+            "-156:-12": {
+                "x": -156,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-148:-5": {
+                "x": -148,
+                "y": -5,
+                "block": "air",
+                "components": []
+            },
+            "-148:1": {
+                "x": -148,
+                "y": 1,
+                "block": "air",
+                "components": []
+            },
+            "-157:32": {
+                "x": -157,
+                "y": 32,
+                "block": "air",
+                "components": []
+            },
+            "-150:-11": {
+                "x": -150,
+                "y": -11,
+                "block": "air",
+                "components": []
+            },
+            "-151:-13": {
+                "x": -151,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-150:-14": {
+                "x": -150,
+                "y": -14,
+                "block": "air",
+                "components": []
+            },
+            "-159:-17": {
+                "x": -159,
+                "y": -17,
+                "block": "stone",
+                "components": []
+            },
+            "-149:-13": {
+                "x": -149,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-158:-13": {
+                "x": -158,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-157:-14": {
+                "x": -157,
+                "y": -14,
+                "block": "air",
+                "components": []
+            },
+            "-153:-14": {
+                "x": -153,
+                "y": -14,
+                "block": "air",
+                "components": []
+            },
+            "-145:21": {
+                "x": -145,
+                "y": 21,
+                "block": "air",
+                "components": []
+            },
+            "-154:-12": {
+                "x": -154,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-157:31": {
+                "x": -157,
+                "y": 31,
+                "block": "torch",
+                "components": []
+            },
+            "-152:-12": {
+                "x": -152,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-155:29": {
+                "x": -155,
+                "y": 29,
+                "block": "air",
+                "components": []
+            },
+            "-148:-9": {
+                "x": -148,
+                "y": -9,
+                "block": "air",
+                "components": []
+            },
+            "-148:-12": {
+                "x": -148,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-148:-6": {
+                "x": -148,
+                "y": -6,
+                "block": "stone",
+                "components": []
+            },
+            "-148:0": {
+                "x": -148,
+                "y": 0,
+                "block": "air",
+                "components": []
+            },
+            "-155:-14": {
+                "x": -155,
+                "y": -14,
+                "block": "air",
+                "components": []
+            },
+            "-156:-13": {
+                "x": -156,
+                "y": -13,
+                "block": "air",
+                "components": []
+            },
+            "-149:-14": {
+                "x": -149,
+                "y": -14,
+                "block": "air",
+                "components": []
+            },
+            "-150:-12": {
+                "x": -150,
+                "y": -12,
+                "block": "air",
+                "components": []
+            },
+            "-151:-14": {
+                "x": -151,
+                "y": -14,
+                "block": "air",
+                "components": []
+            },
+            "-160:-17": {
+                "x": -160,
+                "y": -17,
+                "block": "air",
+                "components": []
+            },
+            "-149:-11": {
+                "x": -149,
+                "y": -11,
+                "block": "air",
+                "components": []
+            }
+        },
+        "-9": {
+            "-131:22": {
+                "x": -131,
+                "y": 22,
+                "block": "air",
+                "components": []
+            },
+            "-144:12": {
+                "x": -144,
+                "y": 12,
+                "block": "air",
+                "components": []
+            },
+            "-143:20": {
+                "x": -143,
+                "y": 20,
+                "block": "air",
+                "components": []
+            },
+            "-144:18": {
+                "x": -144,
+                "y": 18,
+                "block": "stone",
+                "components": []
+            },
+            "-144:21": {
+                "x": -144,
+                "y": 21,
+                "block": "air",
+                "components": []
+            },
+            "-131:21": {
+                "x": -131,
+                "y": 21,
+                "block": "air",
+                "components": []
+            },
+            "-144:8": {
+                "x": -144,
+                "y": 8,
+                "block": "air",
+                "components": []
+            },
+            "-144:17": {
+                "x": -144,
+                "y": 17,
+                "block": "air",
+                "components": []
+            },
+            "-143:10": {
+                "x": -143,
+                "y": 10,
+                "block": "stone",
+                "components": []
+            },
+            "-143:22": {
+                "x": -143,
+                "y": 22,
+                "block": "stone",
+                "components": []
+            },
+            "-144:20": {
+                "x": -144,
+                "y": 20,
+                "block": "air",
+                "components": []
+            },
+            "-144:14": {
+                "x": -144,
+                "y": 14,
+                "block": "stone",
+                "components": []
+            },
+            "-143:19": {
+                "x": -143,
+                "y": 19,
+                "block": "air",
+                "components": []
+            },
+            "-131:23": {
+                "x": -131,
+                "y": 23,
+                "block": "air",
+                "components": []
+            },
+            "-143:6": {
+                "x": -143,
+                "y": 6,
+                "block": "stone",
+                "components": []
+            },
+            "-144:10": {
+                "x": -144,
+                "y": 10,
+                "block": "air",
+                "components": []
+            },
+            "-143:18": {
+                "x": -143,
+                "y": 18,
+                "block": "coal_ore",
+                "components": []
+            },
+            "-144:16": {
+                "x": -144,
+                "y": 16,
+                "block": "air",
+                "components": []
+            },
+            "-143:21": {
+                "x": -143,
+                "y": 21,
+                "block": "air",
+                "components": []
+            },
+            "-144:19": {
+                "x": -144,
+                "y": 19,
+                "block": "air",
+                "components": []
+            }
+        },
+        "-7": {
+            "-97:22": {
+                "x": -97,
+                "y": 22,
+                "block": "air",
+                "components": []
+            },
+            "-97:23": {
+                "x": -97,
+                "y": 23,
+                "block": "air",
+                "components": []
+            },
+            "-97:24": {
+                "x": -97,
+                "y": 24,
+                "block": "air",
+                "components": []
+            },
+            "-98:22": {
+                "x": -98,
+                "y": 22,
+                "block": "air",
+                "components": []
+            }
+        },
+        "-6": {
+            "-90:25": {
+                "x": -90,
+                "y": 25,
+                "block": "air",
+                "components": []
+            },
+            "-91:23": {
+                "x": -91,
+                "y": 23,
+                "block": "air",
+                "components": []
+            },
+            "-90:23": {
+                "x": -90,
+                "y": 23,
+                "block": "air",
+                "components": []
+            },
+            "-90:24": {
+                "x": -90,
+                "y": 24,
+                "block": "air",
+                "components": []
+            }
+        },
+        "-4": {
+            "-50:14": {
+                "x": -50,
+                "y": 14,
+                "block": "air",
+                "components": []
+            },
+            "-50:15": {
+                "x": -50,
+                "y": 15,
+                "block": "air",
+                "components": []
+            },
+            "-50:13": {
+                "x": -50,
+                "y": 13,
+                "block": "air",
+                "components": []
+            }
+        },
+        "-3": {
+            "-35:14": {
+                "x": -35,
+                "y": 14,
+                "block": "air",
+                "components": []
+            },
+            "-40:8": {
+                "x": -40,
+                "y": 8,
+                "block": "stone",
+                "components": []
+            },
+            "-34:13": {
+                "x": -34,
+                "y": 13,
+                "block": "air",
+                "components": []
+            },
+            "-40:7": {
+                "x": -40,
+                "y": 7,
+                "block": "stone",
+                "components": []
+            },
+            "-42:13": {
+                "x": -42,
+                "y": 13,
+                "block": "dirt",
+                "components": []
+            },
+            "-35:16": {
+                "x": -35,
+                "y": 16,
+                "block": "air",
+                "components": []
+            },
+            "-35:13": {
+                "x": -35,
+                "y": 13,
+                "block": "air",
+                "components": []
+            },
+            "-44:13": {
+                "x": -44,
+                "y": 13,
+                "block": "dirt",
+                "components": []
+            },
+            "-35:15": {
+                "x": -35,
+                "y": 15,
+                "block": "air",
+                "components": []
+            }
+        },
+        "-2": {
+            "-30:14": {
+                "x": -30,
+                "y": 14,
+                "block": "air",
+                "components": []
+            },
+            "-20:17": {
+                "x": -20,
+                "y": 17,
+                "block": "air",
+                "components": []
+            },
+            "-30:17": {
+                "x": -30,
+                "y": 17,
+                "block": "air",
+                "components": []
+            },
+            "-21:16": {
+                "x": -21,
+                "y": 16,
+                "block": "air",
+                "components": []
+            },
+            "-32:14": {
+                "x": -32,
+                "y": 14,
+                "block": "air",
+                "components": []
+            },
+            "-30:16": {
+                "x": -30,
+                "y": 16,
+                "block": "air",
+                "components": []
+            },
+            "-29:14": {
+                "x": -29,
+                "y": 14,
+                "block": "air",
+                "components": []
+            },
+            "-30:15": {
+                "x": -30,
+                "y": 15,
+                "block": "air",
+                "components": []
+            },
+            "-30:18": {
+                "x": -30,
+                "y": 18,
+                "block": "air",
+                "components": []
+            }
+        },
+        "8": {
+            "136:14": {
+                "x": 136,
+                "y": 14,
+                "block": "stone",
+                "components": []
+            }
+        },
+        "9": {
+            "157:19": {
+                "x": 157,
+                "y": 19,
+                "block": "stone",
+                "components": []
+            }
+        },
+        "11": {
+            "186:21": {
+                "x": 186,
+                "y": 21,
+                "block": "stone",
+                "components": []
+            }
+        },
+        "36": {
+            "579:17": {
+                "x": 579,
+                "y": 17,
+                "block": "stone",
+                "components": []
+            }
+        },
+        "43": {
+            "699:26": {
+                "x": 699,
+                "y": 26,
+                "block": "stone",
+                "components": []
+            }
+        },
+        "56": {
+            "897:34": {
+                "x": 897,
+                "y": 34,
+                "block": "stone",
+                "components": []
+            },
+            "897:37": {
+                "x": 897,
+                "y": 37,
+                "block": "stone",
+                "components": []
+            },
+            "897:32": {
+                "x": 897,
+                "y": 32,
+                "block": "stone",
+                "components": []
+            }
+        }
+    }
 }

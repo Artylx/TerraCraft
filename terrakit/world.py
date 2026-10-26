@@ -677,9 +677,11 @@ CREATURE = SpawnCategory("creature", max_count=10)
 SPAWN_RULES = [
     # créatures : en pleine lumière, 10 au maximum en tout autour d'un joueur
     SpawnRule(EntityClass.Fox, category=CREATURE, weight=10, min_light=9,
-              group_min=1, group_max=3, group_radius=4, max_count=4, rarity=Rarity.UNCOMMON),
-    # SpawnRule(EntityClass.Pig, category=CREATURE, weight=15, min_light=9,
-    #           group_min=2, group_max=4),
+              group_min=1, group_max=2, group_radius=4, max_count=3, rarity=Rarity.EPIC),
+    SpawnRule(EntityClass.Pig, category=CREATURE, weight=15, min_light=9,
+              group_min=2, group_max=4, max_count=3),
+    SpawnRule(EntityClass.Hedgehog, category=CREATURE, weight=15, min_light=9,
+              group_min=1, group_max=1, max_count=2, rarity=Rarity.UNCOMMON),
     # SpawnRule(EntityClass.Fox, category=CREATURE, rarity=Rarity.RARE, ...),   # (exemple de variante rare)
 
     # hostiles : 8 au maximum en tout, quel que soit le mélange
@@ -689,8 +691,8 @@ SPAWN_RULES = [
               rarity=Rarity.UNCOMMON, group_min=2, group_max=4, group_radius=5, max_count=4),
 
     # entité sans catégorie, rare, un seul exemplaire à la fois
-    SpawnRule(EntityClass.Wither, category=None, weight=5, rarity=Rarity.LEGENDARY,
-              max_light=4, max_count=1, min_distance=20),
+    # SpawnRule(EntityClass.Wither, category=None, weight=5, rarity=Rarity.LEGENDARY,
+    #           max_light=4, max_count=1, min_distance=20),
 ]
 
 class WorldSolo():

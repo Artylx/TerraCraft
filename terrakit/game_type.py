@@ -437,6 +437,8 @@ ItemProperty.COOKED_EGG = Hanger_consumable("cooked_egg", TextureType.COOKED_EGG
 ItemProperty.POUP = Hanger_consumable("poup", TextureType.POUP, 10, -20)
 ItemProperty.FOX_MEAT = Hanger_consumable("fox_meat", TextureType.FOX_MEAT, 10, 4, heatable=True, warmer_item="FOX_COOKED_MEAT")
 ItemProperty.FOX_COOKED_MEAT = Hanger_consumable("fox_cooked_meat", TextureType.FOX_COOKED_MEAT, 10, 20)
+ItemProperty.PIG_MEAT = Hanger_consumable("pig_meat", TextureType.PIG_MEAT, 10, 6, heatable=True, warmer_item="PIG_COOKED_MEAT")
+ItemProperty.PIG_COOKED_MEAT = Hanger_consumable("pig_cooked_meat", TextureType.PIG_COOKED_MEAT, 10, 30)
 
 ItemProperty.STICK = ItemProperty("stick", TextureType.STICK, 100, False, None)
 
